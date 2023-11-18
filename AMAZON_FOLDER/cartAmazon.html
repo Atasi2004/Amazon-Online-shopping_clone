@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="AMAZON.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body{
+            background-color: rgb(196, 200, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <ul>
+                <li>
+                    <img src="C:\Users\atasi\Downloads\download-removebg-preview (8).png" alt="logo">
+
+                </li>
+                <li><a href="location.html"><span class="hello">Hello</span>
+                    <p><span class="Address">Select your Address</span>
+                        <i class="fa fas-regular fa-location-dot"></i></p>
+                </a> 
+                </li>
+                <div class="searchbar">
+                    
+                    <div class="search-option-All">
+                        <select class="search-select" id="option-search-id">
+                            <i class="fa-solid fa-bars"></i>
+                            <option value="All">All</option>
+                            <option value="Amazon devices">Amazon devices</option>
+                            <option value="Apps and games">Apps and games</option>
+                            <option value="AMazon fashion">Amazon fashion</option>
+                            <option value="baby">Baby</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="Books">Books</option>
+                            <option value="car and motorbike">Car and Motorbike</option>
+                            <option value="computers and accessories">Computers and Accessories</option>
+                            <option value="Clothing and accessories">Clothing and accessories</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="garden and outdoors">Garden and Outdoors</option>
+                            <option value="gifts">Gift Cards</option>
+                            <option value="grocery and gourment foods">Gourment Foods</option>
+        
+                        </select>
+                       
+                        <!-- <nav><i class=" fab fa-solid fa-magnifying-glass"></i></nav> -->
+                        
+                    </div>
+                    <input type="text" placeholder="Search Amazon.in">
+                    <div class="div-glass">
+                        <img class="glass" src="C:\Users\atasi\Downloads\fa0e7b992eff03c576727e95c746005c-removebg-preview.png" alt="">
+
+                    </div>
+                   
+                
+                </div>
+                <li onclick="toggleMenu()" class="EN">
+                    <img  src="data:image/png;base64,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" alt="" class="india-flag">
+
+                    EN
+                    
+                    <!-- <p><span class="EN">EN</span></p> -->
+
+                </li>
+                <div class="sub-menu-wrap" id="submenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <!-- <input type="checkbox" name="" id="">ABC -->
+                            <input type="radio" name="lang">EN<br>
+                            <input type="radio" name="lang">हिंदी<br>
+                            <input type="radio">বাংলা - BN - অনুবাদ <br>
+                            <input type="radio">தமிழ் - TA - மொழிபெயர்ப்பு<br>
+                            <input type="radio" name="a" id="b">मराठी - MR - भाषांतर<br>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <li onclick="toggleMenu2()">
+                    <a><span class="nav-signing">Hello,Sign in</span>
+                        <p><span class="nav-sign-2">Acounts & list</span></p>
+                    </a>
+                    
+                </li>
+                <div class="sub-menu-wrap2" id="submenu2">
+                    <div class="sub-menu2">
+                        <div class="user-info2">
+                            <div class="sign-info">
+                                <button>Sign-in</button><br><hr>
+                                <p>New Customer? Stay here</p>
+                            </div>
+                            <div class="list-Accounts">
+                                <div class="list">
+                                    <h3>Your List</h3>
+                                    <a href="#">Create a Wishlist</a><br>
+                                    <a href="#">Wish from any website</a><br>
+                                    <a href="#">Baby wishlist</a><br>
+                                    <a href="#">Discover Your style</a><br>
+                                    <a href="#">Explore Showroom</a><br>
+                                </div>
+                            </div>
+                            <!-- <input type="checkbox" name="" id="">ABC -->
+                            <!-- <input type="radio" name="lang">EN<br>
+                            <input type="radio" name="lang">हिंदी<br>
+                            <input type="radio">বাংলা - BN - অনুবাদ <br>
+                            <input type="radio">தமிழ் - TA - மொழிபெயர்ப்பு<br>
+                            <input type="radio" name="a" id="b">मराठी - MR - भाषांतर<br> -->
+                            
+                        </div>
+                    </div>
+                </div>
+                <li>
+                    <a href="#"><span class="nav-returns">Returns</span>
+                    
+                        <p><span class="nav-orders">& Orders</span></p>
+                   
+                    </a>
+                </li>
+                <li><a> <span class="nav-cart-icon nav-sprite">
+                    <!-- Cart -->
+                    <!-- <i class="fa fa-thin fa-cart-shopping" style="color: #d1d9e6;"></i> -->
+                    <img class="shopping-cart-amazon" src="C:\Users\atasi\Downloads\Screenshot__162_-removebg-preview.png" alt="">
+                    
+                </span></a>
+                </li>
+                <!-- <i class="fa fa-thin fa-cart-shopping" style="color: #d1d9e6;"></i> -->
+            </ul>
+        </div>
+        
+    </header>
+    <div class="Second">
+        <ul>
+            <i class="fas fa-bars" style="color: white;padding-right:5px;" id="hamburger"></i>
+            <li>All</li>
+            <li>Amazon miniTV</li>
+            <li>Sell</li>
+            <li>Best Sellers</li>
+            <li>Today's Deals</li>
+            <li>Mobile</li>
+            <li>New Release</li>
+            <li>Customer Service</li>
+            <li class="electronics">Electronics</li>
+            <!-- <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li> -->
+            <li><img  class="hiphop" src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/P3_SWM_400x39._CB575169081_.jpg" alt="a"></li>
+ 
+         </ul>
+     </div>
+</body>
+</html>

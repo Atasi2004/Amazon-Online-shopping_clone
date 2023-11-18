@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+body{
+    background-color: rgb(23, 22, 27);
+
+}
+.header{
+    /* background-color: rgb(22, 19, 31); */
+    background-color: rgb(23, 22, 27);
+    padding:9px;
+
+    
+}
+.amazon-block{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.A{
+    width: 200px;
+}
+.nav-bar ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.nav-bar ul li{
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    /* padding-top: 10px; */
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.nav-bar ul li:hover{
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+#home{
+    color: rgb(219, 28, 108);
+}
+.li-tags{
+    padding-top: 18px;
+    margin-left: 30px;
+}
+.back-amazon-1{
+    margin-left:360px;
+
+}
+.back-amazon{
+    /* margin-left:100px; */
+    width: 40px;
+    padding-top: 8px;
+    /* margin-left: 50px; */
+}
+.header-setting-bar{
+    color: white;
+    padding-top: 18px;
+    margin-left: 30px;
+}
+.image-section{
+    display: flex;
+}
+.image-item{
+    min-width: 110%;
+    transition: transform 0.2s;
+    padding-left:30px;
+    /* background-size: cover; */
+
+}
+.image-item img{
+    min-width: 100%;
+}
+.image-slider-btn{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    position: absolute;
+    top:80px;
+    /* padding:12px; */
+}
+.image-slider-btn button{
+    font-size: 1.8rem;
+    color:white;
+    padding: 100px 20px;
+    background: transparent;
+
+}
+.slidebar-1{
+    color: white;
+    margin-left: 20px;
+    font-size: 1.6rem;
+
+}
+.first-heading{
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+/* .first-row{ */
+    /* display: flex; */
+    /* padding-right: 20px; */
+/* } */
+.watched-series{
+    display: flex;
+}
+.watched-video{
+    margin:10px;
+    transition: 0.5s;
+    /* width:300px; */
+}
+.watched-video:hover{
+    transform: scale(1.15);
+    z-index: 2;
+}
+.series-img{
+    border-radius: 4px;
+    width:280px;
+}
+.footer{
+    min-width:100%;
+    height:170px;
+    /* margin-top:20px; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    background-color: rgba(35, 35, 40, 0.856);
+}
+.nav-footer{
+    width:150px;
+    margin-left: 70px;
+    /* margin-top: 20px; */
+    /* justify-content: space-evenly; */
+}
+.nav-footer img{
+    margin-top: 20px;
+    display: flex;
+
+}

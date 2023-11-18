@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon miniTV</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCcdXpWYY0E-XMk32dkv1DSOj_9mXiKAnyqw&usqp=CAU" type="image/x-icon">
+    <link rel="stylesheet" href="Amazon_mini_TV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <ul class="nav-header-ul">
+                <li class="amazon-block">
+                    <!-- <img class="A" src="C:\Users\atasi\Downloads\download-removebg-preview (9).png" alt=""> -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTU4IDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIuNTM3MSAyMy4wNDkyQzEyLjE0MSAyMi43MzEyIDEyLjQ5MzUgMjIuMjk1MiAxMi45NjQ4IDIyLjU0MTJDMTguMzc3OSAyNS4zNjAyIDI1LjA2NTUgMjcuMDU4MiAzMS45NzY3IDI3LjA1ODJDMzYuNjM4IDI3LjA1ODIgNDEuNzYyIDI2LjE5MjIgNDYuNDc3OCAyNC40MDIyQzQ3LjE4ODIgMjQuMTMxMiA0Ny43ODM5IDI0LjgyMTIgNDcuMDg4OSAyNS4yODEyQzQyLjg4MzYgMjguMDU5MiAzNi43ODUzIDI5LjUzNjIgMzEuNTM0OCAyOS41MzYyQzI0LjE3NjIgMjkuNTM2MiAxNy41NTIgMjcuMTAyMiAxMi41MzYgMjMuMDQ5MkgxMi41MzcxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQzLjgyNDIgMjIuODM1MUM0Ni4yMzAxIDIxLjMyMTEgNTAuMTc0NiAyMS43NTcxIDUwLjYzMjkgMjIuMjY1MUM1MS4wOTU1IDIyLjc3NTEgNTAuNTExNyAyNi4zMTgxIDQ4LjI1NjQgMjguMDA1MUM0Ny45MDk0IDI4LjI2NzEgNDcuNTc3NyAyOC4xMjcxIDQ3LjczMjYgMjcuNzg1MUM0OC4yNCAyNi42NTAxIDQ5LjM3NyAyNC4xMTExIDQ4LjgzNzkgMjMuNDkyMUM0OC4zMDExIDIyLjg3NTEgNDUuMjgxOSAyMy4xOTkxIDQzLjkyNTYgMjMuMzQ2MUM0My41MTY1IDIzLjM4OTEgNDMuNDUzMiAyMy4wNjgxIDQzLjgyNDIgMjIuODM2MVYyMi44MzUxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTcuNTY1OSA5Ljc3NjEyQzguNjU4MTIgOS43NzYxMiAxMC4wODMxIDEwLjAzNjEgMTAuOTQxOSAxMC43NzMxQzEyLjAzMyAxMS42ODUxIDExLjkyNzIgMTIuOTAxMSAxMS45MjcyIDE0LjIyMzFWMTcuMzQ4MUMxMS45MjcyIDE4LjI4ODEgMTIuMzYzNiAxOC43MDAxIDEyLjc3MjggMTkuMjA4MUMxMi45MTU3IDE5LjM5MTEgMTIuOTQ3NCAxOS42MDgxIDEyLjc2NTEgMTkuNzQxMUMxMi4xODY1IDIwLjE3OTIgMTEuNjEzNiAyMC42MjM1IDExLjA0NjYgMjEuMDc0MUMxMC44OTI4IDIxLjE4MzQgMTAuNjgzMSAyMS4xOTkxIDEwLjUxMiAyMS4xMTQxQzkuNzY5OTggMjAuNTYyMSA5LjYzNDY4IDIwLjMwNTEgOS4yMjc2OSAxOS43NzkxQzcuOTk3OTkgMjAuOTAwMSA3LjEyNzI2IDIxLjIzNTEgNS41MzYzOSAyMS4yMzUxQzMuNjQ4NzMgMjEuMjM2MSAyLjE4MjI1IDIwLjE5NjEgMi4xODIyNSAxOC4xMTIxQzIuMTgyMjUgMTYuNDgzMSAzLjE2NzU0IDE1LjM3NDEgNC41NzE4MyAxNC44MzIxQzUuNzg1MTcgMTQuMzU1MSA3LjQ4NDA2IDE0LjI2ODEgOC43ODM2IDE0LjEzODFWMTMuODc4MUM4Ljc4MzYgMTMuNDAyMSA4LjgyNTA2IDEyLjgzNDEgOC41MTA4MiAxMi40MjIxQzguMjM4MDMgMTIuMDU0MSA3LjcxNDI5IDExLjkwMTEgNy4yNTM4MyAxMS45MDExQzYuNDAwNTcgMTEuOTAxMSA1LjY0MDA1IDEyLjI5MzEgNS40NTIzNyAxMy4xMDYxQzUuNDEzMDkgMTMuMjg3MSA1LjI2Njg4IDEzLjQ2NjEgNS4wNjM5MyAxMy40NzQxTDIuODkyNTggMTMuMjY0MUMyLjcwOTI3IDEzLjIyNzEgMi41MDUyMyAxMy4wOTUxIDIuNTU4NjkgMTIuODQ2MUMzLjA0MTI1IDEwLjU2MjMgNS4yODU1MiA5LjgyMzY1IDcuMzYwMTYgOS43NzgzN0w3LjU2NTkgOS43NzYxMlpNOC43ODM2IDE1Ljc0MzFDNy4xNjMyNyAxNS43NDMxIDUuNDUwMTkgMTYuMDU0MSA1LjQ1MDE5IDE3Ljc2MzFDNS40NTAxOSAxOC42MzExIDUuOTUzMiAxOS4yMTgxIDYuODE0MTEgMTkuMjE4MUM3LjQ0MjYgMTkuMjE4MSA4LjAwODkgMTguODcxMSA4LjM2NDYxIDE4LjMwNTFDOC44MDMyNCAxNy42MTExIDguNzgzNiAxNi45NjAxIDguNzgzNiAxNi4xNzkxVjE1Ljc0MzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTguNTY2NSA5Ljg3MzA1QzYxLjg5MjIgOS44NzMwNSA2My42OTE1IDEyLjQzIDYzLjY5MTUgMTUuNjc5QzYzLjY5MTUgMTguODE5IDYxLjcwNDYgMjEuMzExIDU4LjU2NjUgMjEuMzExQzU1LjMwNCAyMS4zMTEgNTMuNTI3NiAxOC43NTUgNTMuNTI3NiAxNS41NzFDNTMuNTI3NiAxMi4zNjQgNTUuMzI1OCA5Ljg3MzA1IDU4LjU2NjUgOS44NzMwNVpNNTguNTg3MiAxMS45NzRDNTYuOTkzMyAxMS45NzQgNTYuODM5NiAxMy44NTI1IDU2LjgzMDkgMTUuMTEzNEw1Ni44MzA1IDE1LjUwNkM1Ni44MzQ5IDE2LjgzNiA1Ni45MjQzIDE5LjE4NyA1OC41NjU0IDE5LjE4N0M2MC4zMDM2IDE5LjE4NyA2MC4zODU0IDE3LjAyMiA2MC4zODU0IDE1LjdDNjAuMzg1NCAxNC44MzQgNjAuMzQ1IDEzLjc5NCA2MC4wNTE1IDEyLjk3MkM1OS43OTk1IDEyLjI1NiA1OS4yOTg2IDExLjk3NSA1OC41ODcyIDExLjk3NVYxMS45NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzYuOTM3IDkuNzc2MTJDMzguMDI4MSA5Ljc3NjEyIDM5LjQ1MSAxMC4wMzYxIDQwLjMxMDggMTAuNzczMUM0MS4zNDEzIDExLjYzNDUgNDEuMzA0MSAxMi43NjcgNDEuMjk2OCAxNC4wMDM4TDQxLjI5NjEgMTcuMzQ4MUM0MS4yOTYxIDE4LjI4ODEgNDEuNzMyNSAxOC43MDAxIDQyLjE0MTcgMTkuMjA4MUM0Mi4yODM1IDE5LjM5MTEgNDIuMzE2MyAxOS42MDgxIDQyLjEzNDEgMTkuNzQxMUM0MS45NjIyIDE5Ljg2OTQgNDEuNzQwNiAyMC4wMzg4IDQxLjUwNzIgMjAuMjE5M0w0MS4wMzU4IDIwLjU4NjFDNDAuODAzNCAyMC43Njc5IDQwLjU4NDQgMjAuOTQwNiA0MC40MTY2IDIxLjA3NDFDNDAuMjYyNyAyMS4xODMgNDAuMDUzNSAyMS4xOTkgMzkuODgyIDIxLjExNTFDMzkuMTM2NyAyMC41NjIxIDM5LjAwMzYgMjAuMzA1MSAzOC41OTc3IDE5Ljc3OTFDMzcuMzY4IDIwLjkwMDEgMzYuNDk2MiAyMS4yMzUxIDM0LjkwMiAyMS4yMzUxQzMzLjAxNzYgMjEuMjM1MSAzMS41NTIyIDIwLjE5NTEgMzEuNTUyMiAxOC4xMTIxQzMxLjU1MjIgMTYuNDgzMSAzMi41MzQzIDE1LjM3MzEgMzMuOTM5NiAxNC44MzExQzM1LjE1NjMgMTQuMzU1MSAzNi44NTMgMTQuMjY4MSAzOC4xNTE0IDE0LjEzODFWMTMuODc4MUMzOC4xNTE0IDEzLjQwMjEgMzguMTk1MSAxMi44MzUxIDM3Ljg3ODYgMTIuNDIyMUMzNy42MDU5IDEyLjA1NDEgMzcuMDgyMSAxMS45MDIxIDM2LjYyMzggMTEuOTAyMUMzNS43NjczIDExLjkwMjEgMzUuMDA3OSAxMi4yOTQxIDM0LjgyMjQgMTMuMTA2MUMzNC43ODA5IDEzLjI4NzEgMzQuNjM1OCAxMy40NjYxIDM0LjQzMjggMTMuNDc1MUwzMi4yNjE1IDEzLjI2MzFDMzIuMDc2IDEzLjIyNzEgMzEuODczIDEzLjA5NTEgMzEuOTI1NCAxMi44NDYxQzMyLjQyNTIgMTAuNDg2MSAzNC44MDM4IDkuNzc2MTIgMzYuOTM3IDkuNzc2MTJaTTM4LjE1MjUgMTUuNzQ0MUMzNi41MzExIDE1Ljc0NDEgMzQuODE5MSAxNi4wNTQxIDM0LjgxOTEgMTcuNzY0MUMzNC44MTkxIDE4LjYzMTEgMzUuMzIzMiAxOS4yMTkxIDM2LjE4MyAxOS4yMTkxQzM2LjgxMDQgMTkuMjE5MSAzNy4zNzU2IDE4Ljg3MTEgMzcuNzMyNCAxOC4zMDUxQzM4LjE3MzIgMTcuNjExMSAzOC4xNTE0IDE2Ljk2MDEgMzguMTUxNCAxNi4xNzkxTDM4LjE1MjUgMTUuNzQ0MVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNi40NDAzIDkuODczMDVDMjcuMzc5NyA5Ljg3MzA1IDI4LjQwNjUgMTAuMjIyIDI5LjAzMjggMTEuMDAxQzI5Ljc0MzEgMTEuODY1IDI5LjU5OCAxMy4xMjQgMjkuNTk4IDE0LjIyN0wyOS41OTU4IDIwLjcyNEMyOS41OTU4IDIwLjkzMSAyOS40MDE2IDIxLjA5NCAyOS4xNjU5IDIxLjA5NEgyNi45MjY5QzI2LjcwNjkgMjEuMDg5OCAyNi41Mjk1IDIwLjkyNzcgMjYuNTI0MyAyMC43MjZMMjYuNTIzMiAxNS4yNjZDMjYuNTIzMiAxNC44MzQgMjYuNTY1OCAxMy43NSAyNi40NjEgMTMuMzM5QzI2LjI5MyAxMi42NDUgMjUuNzkxMSAxMi40NTEgMjUuMTQ0IDEyLjQ1MUMyNC41NTQgMTIuNDYzMiAyNC4wMjc5IDEyLjc5NDYgMjMuODA0MSAxMy4yOTVDMjMuNjI1MiAxMy43MDEgMjMuNTk3OSAxNC4zMTUgMjMuNTk0NiAxNC44NDJWMjAuNzI0QzIzLjU5NDYgMjAuOTMxIDIzLjQwMjYgMjEuMDk0IDIzLjE2MzYgMjEuMDk0SDIwLjkyNjhDMjAuNzA2OCAyMS4wODkzIDIwLjUyOTQgMjAuOTI3NiAyMC41MjMxIDIwLjcyNkwyMC41MjA5IDE1LjI2NkMyMC41MjA5IDE1LjEwMyAyMC41MjUzIDE0LjkyOCAyMC41Mjc0IDE0Ljc0OEwyMC41Mjk2IDE0LjQ3NkMyMC41Mjg1IDEzLjQ3MiAyMC4zOTEgMTIuNDMgMTkuMTQyOCAxMi40M0MxNy43MDI1IDEyLjQzIDE3LjU5OTkgMTMuNzQzIDE3LjU5MzQgMTQuODcxVjIwLjcyNEMxNy41OTM0IDIwLjkzMSAxNy4zOTkyIDIxLjA5NCAxNy4xNjAyIDIxLjA5NEgxNC45MjAxQzE0LjcxMzcgMjEuMDg4MiAxNC41NDM1IDIwLjk0NDEgMTQuNTIwOCAyMC43NTZWMTAuNDZDMTQuNTIwOCAxMC4yNTUgMTQuNzE1IDEwLjA5IDE0Ljk1MzkgMTAuMDlIMTcuMDQwMkMxNy4yNTg0IDEwLjEwMiAxNy40MzMgMTAuMjQ4IDE3LjQ0NzIgMTAuNDM3VjExLjc4SDE3LjQ4OTdDMTguMDMyIDEwLjQ4IDE5LjA1NzcgOS44NzMwNSAyMC40MzggOS44NzMwNUMyMS44MzkgOS44NzMwNSAyMi43MTczIDEwLjQ4IDIzLjM0NTggMTEuNzhDMjMuODg5MiAxMC40OCAyNS4xMjExIDkuODczMDUgMjYuNDM5MiA5Ljg3MzA1SDI2LjQ0MDNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNzEuMzY2NSA5Ljg3MzA1QzcyLjM3MDQgOS44NzMwNSA3My4zNTM1IDEwLjE5OSA3My45Nzk4IDExLjA4OEM3NC41NjY4IDExLjkxMSA3NC41NjY4IDEzLjI5NSA3NC41NjY4IDE0LjI5MVYyMC43NjlDNzQuNTQxNyAyMC45NTQgNzQuMzU5NSAyMS4wOTQgNzQuMTM2OSAyMS4wOTRINzEuODkwM0M3MS42ODkyIDIxLjA4ODMgNzEuNTIxNSAyMC45NTE0IDcxLjQ5MiAyMC43NjlWMTUuMDU5QzcxLjUwMDcgMTMuOTM5IDcxLjU4NDggMTIuNDA5IDcwLjA5MSAxMi40MDlDNjkuNTQ2NSAxMi40MDkgNjkuMDQ0NiAxMi43MzQgNjguNzk1OCAxMy4yMzFDNjguNDc5NCAxMy44NTkgNjguNDM5IDE0LjQ4OSA2OC40MzkgMTUuMTgxVjIwLjcyNEM2OC40MzQ2IDIwLjkzMSA2OC4yNDA0IDIxLjA5NCA2OC4wMDI2IDIxLjA5NEg2NS43NzEyQzY1LjU1MTIgMjEuMDg5OCA2NS4zNzM4IDIwLjkyNzcgNjUuMzY4NiAyMC43MjZMNjUuMzY0MiAxMC40MjVDNjUuMzgyNyAxMC4yMzcgNjUuNTcwNCAxMC4wOTEgNjUuNzk0MSAxMC4wOTFINjcuODcyN0M2OC4wNjkxIDEwLjEwMSA2OC4yMjk1IDEwLjIxNyA2OC4yNzIxIDEwLjM4MVYxMS45NTRINjguMzEyNEM2OC45NDA5IDEwLjU0NCA2OS44MTkzIDkuODc0MDUgNzEuMzY2NSA5Ljg3NDA1VjkuODczMDVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTEuODAyNiAxMC4wNjMxQzUyLjAzOTMgMTAuMDYzMSA1Mi4yMjgxIDEwLjIxNzEgNTIuMjI4MSAxMC40MzUxVjExLjY5NzFDNTIuMjI0OCAxMS45MDkxIDUyLjAyNjIgMTIuMTgzMSA1MS42NzM4IDEyLjYyMzFMNDcuODU3IDE3LjQ5NjFDNDkuMjczMyAxNy40NjgxIDUwLjc3MDQgMTcuNjU3MSA1Mi4wNTc5IDE4LjMwNDFDNTIuMzQ3IDE4LjQ1MTEgNTIuNDI1NiAxOC42NjcxIDUyLjQ0ODUgMTguODgxMVYyMC40NDcxQzUyLjQ0ODUgMjAuNjY1MSA1Mi4xODQ1IDIwLjkxNTEgNTEuOTA2MiAyMC43ODQxQzQ5LjYzOTkgMTkuNzIxMSA0Ni42MzE3IDE5LjYwNDEgNDQuMTI0MyAyMC43OTcxQzQzLjg2ODkgMjAuOTIwMSA0My42MDA1IDIwLjY3NTEgNDMuNjAwNSAyMC40NTcxVjE4Ljk2NjFDNDMuNjAwNSAxOC43MjgxIDQzLjYwNiAxOC4zMTgxIDQzLjg3NDQgMTcuOTUzMUw0OC4yOTQ2IDEyLjI4MDFINDQuNDQ2MkM0NC4yMTE2IDEyLjI4MDEgNDQuMDIyOCAxMi4xMjgxIDQ0LjAyMDYgMTEuOTEwMVYxMC40MzYxQzQ0LjAxODcgMTAuMzM1IDQ0LjA2MjQgMTAuMjM3OCA0NC4xNDEyIDEwLjE2NzJDNDQuMjIwMSAxMC4wOTY2IDQ0LjMyNzMgMTAuMDU4OSA0NC40Mzc0IDEwLjA2MzFINTEuODAyNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05My4zODc4IDIxVjEzLjQ4OEM5My4zODc4IDEyLjUwMzggOTIuOTQ2NCAxMi4wMTE2IDkyLjA2MzUgMTIuMDExNkM5MS4yODE5IDEyLjAxMTYgOTAuNDkzIDEyLjE5OTggODkuNjk3IDEyLjU3NjFWMTIuNzkzMlYyMUg4Ni41MjcyVjEzLjQ4OEM4Ni41MjcyIDEyLjUwMzggODYuMDg1NyAxMi4wMTE2IDg1LjIwMjggMTIuMDExNkM4NC4zOTIyIDEyLjAxMTYgODMuNTk2MiAxMi4yMDcgODIuODE0NiAxMi41OTc4VjIxSDc5LjY0NDhWOS45MDU2OEg4Mi4yNTAxTDgyLjUzMjMgMTAuOTY5NUM4My4yOTk1IDEwLjQ2MjkgODMuOTg3IDEwLjEwODMgODQuNTk0OSA5LjkwNTY4Qzg1LjIxNzMgOS42ODg1NyA4NS44NTQxIDkuNTgwMDEgODYuNTA1NCA5LjU4MDAxQzg3LjgwODEgOS41ODAwMSA4OC43MjcyIDEwLjA0MzIgODkuMjYyNyAxMC45Njk1QzkwLjAwMDkgMTAuNDc3NCA5MC42OTU3IDEwLjEyMjggOTEuMzQ3IDkuOTA1NjhDOTEuOTk4MyA5LjY4ODU3IDkyLjY3MTQgOS41ODAwMSA5My4zNjYxIDkuNTgwMDFDOTQuMzc5MyA5LjU4MDAxIDk1LjE2MDkgOS44NjIyNiA5NS43MTA5IDEwLjQyNjdDOTYuMjc1NCAxMC45OTEyIDk2LjU1NzYgMTEuNzgwMSA5Ni41NTc2IDEyLjc5MzJWMjFIOTMuMzg3OFpNOTkuNjQwNCAyMVY5LjkwNTY4SDEwMi44MVYyMUg5OS42NDA0Wk0xMDEuMjI1IDguMTkwNTFDMTAwLjY3NSA4LjE5MDUxIDEwMC4yMzQgOC4wMzg1MyA5OS45MDEgNy43MzQ1OEM5OS41NjgxIDcuNDMwNjIgOTkuNDAxNiA3LjAxODExIDk5LjQwMTYgNi40OTcwNUM5OS40MDE2IDUuOTc1OTkgOTkuNTY4MSA1LjU2MzQ4IDk5LjkwMSA1LjI1OTUyQzEwMC4yMzQgNC45NTU1NyAxMDAuNjc1IDQuODAzNTkgMTAxLjIyNSA0LjgwMzU5QzEwMS43NzUgNC44MDM1OSAxMDIuMjE3IDQuOTU1NTcgMTAyLjU1IDUuMjU5NTJDMTAyLjg4MyA1LjU2MzQ4IDEwMy4wNDkgNS45NzU5OSAxMDMuMDQ5IDYuNDk3MDVDMTAzLjA0OSA3LjAxODExIDEwMi44ODMgNy40MzA2MiAxMDIuNTUgNy43MzQ1OEMxMDIuMjE3IDguMDM4NTMgMTAxLjc3NSA4LjE5MDUxIDEwMS4yMjUgOC4xOTA1MVpNMTEzLjA1NyAyMVYxMy43MjY4QzExMy4wNTcgMTMuMTMzNCAxMTIuOTI2IDEyLjY5OTIgMTEyLjY2NiAxMi40MjQyQzExMi40MDUgMTIuMTQ5MSAxMTIuMDA3IDEyLjAxMTYgMTExLjQ3MiAxMi4wMTE2QzExMC42NzYgMTIuMDExNiAxMDkuODg3IDEyLjI1NzcgMTA5LjEwNSAxMi43NDk4VjIxSDEwNS45MzVWOS45MDU2OEgxMDguNTQxTDEwOC44NDUgMTEuMDk5OEMxMTAuMTQ3IDEwLjA4NjYgMTExLjUzNyA5LjU4MDAxIDExMy4wMTMgOS41ODAwMUMxMTQuMDQxIDkuNTgwMDEgMTE0LjgzIDkuODYyMjYgMTE1LjM4IDEwLjQyNjdDMTE1Ljk0NCAxMC45NzY4IDExNi4yMjYgMTEuNzY1NiAxMTYuMjI2IDEyLjc5MzJWMjFIMTEzLjA1N1pNMTE5LjMxNiAyMVY5LjkwNTY4SDEyMi40ODZWMjFIMTE5LjMxNlpNMTIwLjkwMSA4LjE5MDUxQzEyMC4zNTEgOC4xOTA1MSAxMTkuOTA5IDguMDM4NTMgMTE5LjU3NyA3LjczNDU4QzExOS4yNDQgNy40MzA2MiAxMTkuMDc3IDcuMDE4MTEgMTE5LjA3NyA2LjQ5NzA1QzExOS4wNzcgNS45NzU5OSAxMTkuMjQ0IDUuNTYzNDggMTE5LjU3NyA1LjI1OTUyQzExOS45MDkgNC45NTU1NyAxMjAuMzUxIDQuODAzNTkgMTIwLjkwMSA0LjgwMzU5QzEyMS40NTEgNC44MDM1OSAxMjEuODkyIDQuOTU1NTcgMTIyLjIyNSA1LjI1OTUyQzEyMi41NTggNS41NjM0OCAxMjIuNzI1IDUuOTc1OTkgMTIyLjcyNSA2LjQ5NzA1QzEyMi43MjUgNy4wMTgxMSAxMjIuNTU4IDcuNDMwNjIgMTIyLjIyNSA3LjczNDU4QzEyMS44OTIgOC4wMzg1MyAxMjEuNDUxIDguMTkwNTEgMTIwLjkwMSA4LjE5MDUxWk0xMjguOTMzIDIxVjguNTU5NkgxMjQuMzUyVjUuOTU0MjhIMTM2Ljc3VjguNTU5NkgxMzIuMTg5VjIxSDEyOC45MzNaTTE0My4xNTMgMjFMMTM3LjgxMiA1Ljk1NDI4SDE0MS40MTZMMTQ0LjkzMyAxNy44MDg1TDE0OC40MjkgNS45NTQyOEgxNTEuOTQ2TDE0Ni42MDUgMjFIMTQzLjE1M1oiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8yNjRfMzU1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzI2NF8zNTUiIHgxPSIxNTYuMjUiIHkxPSIwIiB4Mj0iNzguMTI1IiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRTkwQjhDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0QyMUY0OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==" alt="" class="A">
+                    <!-- <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAg…vPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==" alt="" > -->
+                </li>
+                <li id="home" class="li-tags">Home</li>
+                <li class="li-tags">Imported</li>
+                <li class="li-tags">Web Series</li>
+                <li class="li-tags">Movies</li>
+                <li class="li-tags">Comedy</li>
+                <li class="li-tags">Romance</li>
+
+                <li class="back-amazon-1">
+                    <a href="Amazon.html"><img class="back-amazon" src="C:\Users\atasi\Downloads\images-removebg-preview (2).png" alt=""></a>
+                </li>
+                <li class="header-setting-bar"><i class="fa fa-solid fa-gear"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image-section">
+            <a href="#"><div class="image-item">
+                <img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (182).png" alt="">
+            </div></a>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (181).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (175).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (180).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (178).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (174).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (171).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt=""></a>
+            </div>
+            <div class="image-item">
+                <a href="#"><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="image-slider-btn">
+            <button id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <!-- 1st slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Continue Watching</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="https://www.amazon.in/minitv/tp/d9a90f3d-2e66-4f40-ad15-83a3e2c53279"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/374608c6fa2032181ad1713ec3a74d35c8e8959975013d59c2e1905f7d0eb90d.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="https://www.amazon.in/minitv/tp/39ff2d15-b060-4aae-b65e-9d2e28cff349"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/b98153e403fe5265461d315518b88397101c2c5a93780460544e4b87b3d1789f.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 1st slidebar -->
+    <!-- 2nd slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Trending TOP 10 on miniTV</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/59d0a318a7df501e1aab66595038f61ebf430446ee243bc9e5c73c4f43c87f0b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/3116c617db47ee25312b452efcb1abad23d2bf2adc6b2b121d6fec4cf0bc90fa.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/e448b2d467279412530b08c4a31b4b59e1ba346c97450b12688db229e61046b3.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/f42a4ba37178e90ff28356a5fa18a70744f02be7cf201fcd4f326689b4cbe5ac.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/32b0906b3d669abe8d69244ff56719226d7220cc3cbcb97cbad1f622dfd35912.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 2nd slidebar -->
+    <!-- start 3rd slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Romantic shows and mini movies</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/302964d62c2c5a4b3e04135fbc88a26da795ed51d5f5c8643f45435c8b8a9054.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0805d66d1b1da405eef73de5e9356ac894aabf60310c1732331f85f0a38cd854.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/974366fb5decd4611c57942e9cd45f005085aa279b7ff5a6989115db4e07ec7b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/6eb4df877c6b94064a37f0d1872dde08ff2980f39969cb75964bad6db57f85e4.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 3rd slidebar -->
+
+    <!-- 4th slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Blockbuster Dubbed Movies</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/bd25587e5abe37194a1685942ba5bfa0d905b8027f8aad1d1f494efdd18c8395.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/c8f867aeed14cfde2c9d8d782372b3be3d4c0add19590081d95e4e603f79b6d5.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/efaa891178f1d4c45670149a1904a5660bd8b3deaaf0ea0f0634ae1c2fd4c86f.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/9f90e3deced9632543f26b09847c46e8d0072486c03d8a46828287f3f5ac4999.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/551f7a572477f147e9e4853a79301eb65ddc8674ba890c9e4c2bb023c818e3d5.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 4th slidebar -->
+    <!-- start 5th slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Trending in Dubbed Series</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/546f5752203cd3b4fa744c018f07a595a14cfba9fbc8fe28274294038e998c16.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/9c5998885b9b754b5d38441aa9737a8e3ae69924e68d092a9ffa77d572d563c1.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/6483b068a967f4ee3c608410f981873acb01b2f65a19e3e41ace91dc9c5f3d94.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/d3b6c5e76f1f27c8ce5ac9446128177da2f89b715a37e3d447a6e3739c6751fb.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/1b10a07990bcaf05a794bc28a0886d45a9ba7be31995bc48812a71fac060a243.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 5th slidebar -->
+
+    <!-- 6th slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Horror, Thriller & Mystery</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/c86b20713d784090a19dab13e64ef68e7ca40952157d02c2fdfea2d2bb32177a.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/2c831cade615ab7d916f9a63f32166a77b2308886f4c027ec19e9b93564db7f6.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/469e4c0a1f21514d3979b21aa22bc6f794e4726ba6b13bf5044de7b5c328db9b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/d658b9a6703804679abf3034eecf1aed155292a7a60a6adf1484872507e77f6e.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/db99b568369de672dd1cd52a500600545ba39189b67fb23625f69156e275a1eb.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 6th slidebar -->
+    <!-- start 7th slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Classic Hits - Shows we all Love!</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/f8b93c4a4874a7a3a6197866d2b76848c5a5c780d7259a1bdb6b7de42512d7c3.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/8e8ad9669884c8f9c87e663c670fdbe925fcebccf5fd71adb99d0ee53dc3d842.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0b6d7d2306fc52d879ed074353befce1c2be81884712c3166b95e9b65bfa12f8.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/11fc751a37615cc507e749d967eb3f824db595fb1ef1301b340694dfdaab64e5.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/7604e6df3b848219e791d1605c8f142ecafda124cae2d4f577d5758516420e39.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 7th slidebar -->
+
+    <!-- 8th slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Mini Movie Mania</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/c0106d6e9dee7dde448c820bbf482d59cb261db4f156fe6077f8d57482e172c4.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/c0cfcc3287b568c3e1c6ab081c28c9907904862b5b91d2899a1c05567d8248e7.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/ea2986409d09df3c7d09c9334979437d79f0ca4e0f5afc42d87fa1edbcbcaf8c.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/974366fb5decd4611c57942e9cd45f005085aa279b7ff5a6989115db4e07ec7b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/21aa0bc375d48ea41f55d4f0824224ed5258baaca76d8a0ef614d03338aa5aff.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 8th slidebar -->
+    <!-- start 3rd slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Romantic shows and mini movies</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/302964d62c2c5a4b3e04135fbc88a26da795ed51d5f5c8643f45435c8b8a9054.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0805d66d1b1da405eef73de5e9356ac894aabf60310c1732331f85f0a38cd854.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/974366fb5decd4611c57942e9cd45f005085aa279b7ff5a6989115db4e07ec7b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/6eb4df877c6b94064a37f0d1872dde08ff2980f39969cb75964bad6db57f85e4.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 3rd slidebar -->
+
+    <!-- 2nd slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Trending TOP 10 on miniTV</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/59d0a318a7df501e1aab66595038f61ebf430446ee243bc9e5c73c4f43c87f0b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/3116c617db47ee25312b452efcb1abad23d2bf2adc6b2b121d6fec4cf0bc90fa.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/e448b2d467279412530b08c4a31b4b59e1ba346c97450b12688db229e61046b3.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/f42a4ba37178e90ff28356a5fa18a70744f02be7cf201fcd4f326689b4cbe5ac.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/32b0906b3d669abe8d69244ff56719226d7220cc3cbcb97cbad1f622dfd35912.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 2nd slidebar -->
+    <!-- start 3rd slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Romantic shows and mini movies</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/302964d62c2c5a4b3e04135fbc88a26da795ed51d5f5c8643f45435c8b8a9054.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0805d66d1b1da405eef73de5e9356ac894aabf60310c1732331f85f0a38cd854.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/974366fb5decd4611c57942e9cd45f005085aa279b7ff5a6989115db4e07ec7b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/6eb4df877c6b94064a37f0d1872dde08ff2980f39969cb75964bad6db57f85e4.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 3rd slidebar -->
+
+    <!-- 2nd slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Trending TOP 10 on miniTV</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/59d0a318a7df501e1aab66595038f61ebf430446ee243bc9e5c73c4f43c87f0b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/3116c617db47ee25312b452efcb1abad23d2bf2adc6b2b121d6fec4cf0bc90fa.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/e448b2d467279412530b08c4a31b4b59e1ba346c97450b12688db229e61046b3.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/f42a4ba37178e90ff28356a5fa18a70744f02be7cf201fcd4f326689b4cbe5ac.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/32b0906b3d669abe8d69244ff56719226d7220cc3cbcb97cbad1f622dfd35912.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 2nd slidebar -->
+    <!-- start 3rd slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Romantic shows and mini movies</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/302964d62c2c5a4b3e04135fbc88a26da795ed51d5f5c8643f45435c8b8a9054.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0805d66d1b1da405eef73de5e9356ac894aabf60310c1732331f85f0a38cd854.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/974366fb5decd4611c57942e9cd45f005085aa279b7ff5a6989115db4e07ec7b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/6eb4df877c6b94064a37f0d1872dde08ff2980f39969cb75964bad6db57f85e4.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 3rd slidebar -->
+
+    <!-- 2nd slidebar start -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Trending TOP 10 on miniTV</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/59d0a318a7df501e1aab66595038f61ebf430446ee243bc9e5c73c4f43c87f0b.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/3116c617db47ee25312b452efcb1abad23d2bf2adc6b2b121d6fec4cf0bc90fa.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/e448b2d467279412530b08c4a31b4b59e1ba346c97450b12688db229e61046b3.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/f42a4ba37178e90ff28356a5fa18a70744f02be7cf201fcd4f326689b4cbe5ac.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img src="https://m.media-amazon.com/images/S/pv-target-images/32b0906b3d669abe8d69244ff56719226d7220cc3cbcb97cbad1f622dfd35912.__SX330__SY186__QL60__._TTH_.jpg" alt="" class="series-img"></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="C:\Users\atasi\OneDrive\Pictures\Screenshots\Screenshot (177).png" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 2nd slidebar -->
+    <!-- start 3rd slidebar -->
+    <div class="slidebar-1">
+        <div class="first-row">
+            <div class="first-heading">Top Rated Series & Mini Movies on IMDb</div>
+            <div class="watched-series">
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/0e7d48840b23ce7f7220b28a9d18cd1a08742b4f8e7b697f0e48e3881b27ee8f.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/4524df59b8e408fc35106fce1ddbc496fad69e47ac2f5110d4d61508c753c29e.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/45bdabe394095dd9640c498c438dee5c3aeb72f66199153d12ec0a392c740dae.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <div class="watched-video">
+                    <a href="#"><img class="series-img" src="https://m.media-amazon.com/images/S/pv-target-images/726499cb2cbae5393aea89fa41eeb242042db0fd7eb1d20f0b179db9891af048.__SX330__SY186__QL60__._TTH_.jpg" alt=""></a>
+                </div>
+                <!-- <div class="watched-video">
+                    <a href="#"><img src="" alt="" class="series-img"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end 3rd slidebar -->
+<div class="footer">
+    <div class="nav-footer">
+        <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTU4IDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIuNTM3MSAyMy4wNDkyQzEyLjE0MSAyMi43MzEyIDEyLjQ5MzUgMjIuMjk1MiAxMi45NjQ4IDIyLjU0MTJDMTguMzc3OSAyNS4zNjAyIDI1LjA2NTUgMjcuMDU4MiAzMS45NzY3IDI3LjA1ODJDMzYuNjM4IDI3LjA1ODIgNDEuNzYyIDI2LjE5MjIgNDYuNDc3OCAyNC40MDIyQzQ3LjE4ODIgMjQuMTMxMiA0Ny43ODM5IDI0LjgyMTIgNDcuMDg4OSAyNS4yODEyQzQyLjg4MzYgMjguMDU5MiAzNi43ODUzIDI5LjUzNjIgMzEuNTM0OCAyOS41MzYyQzI0LjE3NjIgMjkuNTM2MiAxNy41NTIgMjcuMTAyMiAxMi41MzYgMjMuMDQ5MkgxMi41MzcxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQzLjgyNDIgMjIuODM1MUM0Ni4yMzAxIDIxLjMyMTEgNTAuMTc0NiAyMS43NTcxIDUwLjYzMjkgMjIuMjY1MUM1MS4wOTU1IDIyLjc3NTEgNTAuNTExNyAyNi4zMTgxIDQ4LjI1NjQgMjguMDA1MUM0Ny45MDk0IDI4LjI2NzEgNDcuNTc3NyAyOC4xMjcxIDQ3LjczMjYgMjcuNzg1MUM0OC4yNCAyNi42NTAxIDQ5LjM3NyAyNC4xMTExIDQ4LjgzNzkgMjMuNDkyMUM0OC4zMDExIDIyLjg3NTEgNDUuMjgxOSAyMy4xOTkxIDQzLjkyNTYgMjMuMzQ2MUM0My41MTY1IDIzLjM4OTEgNDMuNDUzMiAyMy4wNjgxIDQzLjgyNDIgMjIuODM2MVYyMi44MzUxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTcuNTY1OSA5Ljc3NjEyQzguNjU4MTIgOS43NzYxMiAxMC4wODMxIDEwLjAzNjEgMTAuOTQxOSAxMC43NzMxQzEyLjAzMyAxMS42ODUxIDExLjkyNzIgMTIuOTAxMSAxMS45MjcyIDE0LjIyMzFWMTcuMzQ4MUMxMS45MjcyIDE4LjI4ODEgMTIuMzYzNiAxOC43MDAxIDEyLjc3MjggMTkuMjA4MUMxMi45MTU3IDE5LjM5MTEgMTIuOTQ3NCAxOS42MDgxIDEyLjc2NTEgMTkuNzQxMUMxMi4xODY1IDIwLjE3OTIgMTEuNjEzNiAyMC42MjM1IDExLjA0NjYgMjEuMDc0MUMxMC44OTI4IDIxLjE4MzQgMTAuNjgzMSAyMS4xOTkxIDEwLjUxMiAyMS4xMTQxQzkuNzY5OTggMjAuNTYyMSA5LjYzNDY4IDIwLjMwNTEgOS4yMjc2OSAxOS43NzkxQzcuOTk3OTkgMjAuOTAwMSA3LjEyNzI2IDIxLjIzNTEgNS41MzYzOSAyMS4yMzUxQzMuNjQ4NzMgMjEuMjM2MSAyLjE4MjI1IDIwLjE5NjEgMi4xODIyNSAxOC4xMTIxQzIuMTgyMjUgMTYuNDgzMSAzLjE2NzU0IDE1LjM3NDEgNC41NzE4MyAxNC44MzIxQzUuNzg1MTcgMTQuMzU1MSA3LjQ4NDA2IDE0LjI2ODEgOC43ODM2IDE0LjEzODFWMTMuODc4MUM4Ljc4MzYgMTMuNDAyMSA4LjgyNTA2IDEyLjgzNDEgOC41MTA4MiAxMi40MjIxQzguMjM4MDMgMTIuMDU0MSA3LjcxNDI5IDExLjkwMTEgNy4yNTM4MyAxMS45MDExQzYuNDAwNTcgMTEuOTAxMSA1LjY0MDA1IDEyLjI5MzEgNS40NTIzNyAxMy4xMDYxQzUuNDEzMDkgMTMuMjg3MSA1LjI2Njg4IDEzLjQ2NjEgNS4wNjM5MyAxMy40NzQxTDIuODkyNTggMTMuMjY0MUMyLjcwOTI3IDEzLjIyNzEgMi41MDUyMyAxMy4wOTUxIDIuNTU4NjkgMTIuODQ2MUMzLjA0MTI1IDEwLjU2MjMgNS4yODU1MiA5LjgyMzY1IDcuMzYwMTYgOS43NzgzN0w3LjU2NTkgOS43NzYxMlpNOC43ODM2IDE1Ljc0MzFDNy4xNjMyNyAxNS43NDMxIDUuNDUwMTkgMTYuMDU0MSA1LjQ1MDE5IDE3Ljc2MzFDNS40NTAxOSAxOC42MzExIDUuOTUzMiAxOS4yMTgxIDYuODE0MTEgMTkuMjE4MUM3LjQ0MjYgMTkuMjE4MSA4LjAwODkgMTguODcxMSA4LjM2NDYxIDE4LjMwNTFDOC44MDMyNCAxNy42MTExIDguNzgzNiAxNi45NjAxIDguNzgzNiAxNi4xNzkxVjE1Ljc0MzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTguNTY2NSA5Ljg3MzA1QzYxLjg5MjIgOS44NzMwNSA2My42OTE1IDEyLjQzIDYzLjY5MTUgMTUuNjc5QzYzLjY5MTUgMTguODE5IDYxLjcwNDYgMjEuMzExIDU4LjU2NjUgMjEuMzExQzU1LjMwNCAyMS4zMTEgNTMuNTI3NiAxOC43NTUgNTMuNTI3NiAxNS41NzFDNTMuNTI3NiAxMi4zNjQgNTUuMzI1OCA5Ljg3MzA1IDU4LjU2NjUgOS44NzMwNVpNNTguNTg3MiAxMS45NzRDNTYuOTkzMyAxMS45NzQgNTYuODM5NiAxMy44NTI1IDU2LjgzMDkgMTUuMTEzNEw1Ni44MzA1IDE1LjUwNkM1Ni44MzQ5IDE2LjgzNiA1Ni45MjQzIDE5LjE4NyA1OC41NjU0IDE5LjE4N0M2MC4zMDM2IDE5LjE4NyA2MC4zODU0IDE3LjAyMiA2MC4zODU0IDE1LjdDNjAuMzg1NCAxNC44MzQgNjAuMzQ1IDEzLjc5NCA2MC4wNTE1IDEyLjk3MkM1OS43OTk1IDEyLjI1NiA1OS4yOTg2IDExLjk3NSA1OC41ODcyIDExLjk3NVYxMS45NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzYuOTM3IDkuNzc2MTJDMzguMDI4MSA5Ljc3NjEyIDM5LjQ1MSAxMC4wMzYxIDQwLjMxMDggMTAuNzczMUM0MS4zNDEzIDExLjYzNDUgNDEuMzA0MSAxMi43NjcgNDEuMjk2OCAxNC4wMDM4TDQxLjI5NjEgMTcuMzQ4MUM0MS4yOTYxIDE4LjI4ODEgNDEuNzMyNSAxOC43MDAxIDQyLjE0MTcgMTkuMjA4MUM0Mi4yODM1IDE5LjM5MTEgNDIuMzE2MyAxOS42MDgxIDQyLjEzNDEgMTkuNzQxMUM0MS45NjIyIDE5Ljg2OTQgNDEuNzQwNiAyMC4wMzg4IDQxLjUwNzIgMjAuMjE5M0w0MS4wMzU4IDIwLjU4NjFDNDAuODAzNCAyMC43Njc5IDQwLjU4NDQgMjAuOTQwNiA0MC40MTY2IDIxLjA3NDFDNDAuMjYyNyAyMS4xODMgNDAuMDUzNSAyMS4xOTkgMzkuODgyIDIxLjExNTFDMzkuMTM2NyAyMC41NjIxIDM5LjAwMzYgMjAuMzA1MSAzOC41OTc3IDE5Ljc3OTFDMzcuMzY4IDIwLjkwMDEgMzYuNDk2MiAyMS4yMzUxIDM0LjkwMiAyMS4yMzUxQzMzLjAxNzYgMjEuMjM1MSAzMS41NTIyIDIwLjE5NTEgMzEuNTUyMiAxOC4xMTIxQzMxLjU1MjIgMTYuNDgzMSAzMi41MzQzIDE1LjM3MzEgMzMuOTM5NiAxNC44MzExQzM1LjE1NjMgMTQuMzU1MSAzNi44NTMgMTQuMjY4MSAzOC4xNTE0IDE0LjEzODFWMTMuODc4MUMzOC4xNTE0IDEzLjQwMjEgMzguMTk1MSAxMi44MzUxIDM3Ljg3ODYgMTIuNDIyMUMzNy42MDU5IDEyLjA1NDEgMzcuMDgyMSAxMS45MDIxIDM2LjYyMzggMTEuOTAyMUMzNS43NjczIDExLjkwMjEgMzUuMDA3OSAxMi4yOTQxIDM0LjgyMjQgMTMuMTA2MUMzNC43ODA5IDEzLjI4NzEgMzQuNjM1OCAxMy40NjYxIDM0LjQzMjggMTMuNDc1MUwzMi4yNjE1IDEzLjI2MzFDMzIuMDc2IDEzLjIyNzEgMzEuODczIDEzLjA5NTEgMzEuOTI1NCAxMi44NDYxQzMyLjQyNTIgMTAuNDg2MSAzNC44MDM4IDkuNzc2MTIgMzYuOTM3IDkuNzc2MTJaTTM4LjE1MjUgMTUuNzQ0MUMzNi41MzExIDE1Ljc0NDEgMzQuODE5MSAxNi4wNTQxIDM0LjgxOTEgMTcuNzY0MUMzNC44MTkxIDE4LjYzMTEgMzUuMzIzMiAxOS4yMTkxIDM2LjE4MyAxOS4yMTkxQzM2LjgxMDQgMTkuMjE5MSAzNy4zNzU2IDE4Ljg3MTEgMzcuNzMyNCAxOC4zMDUxQzM4LjE3MzIgMTcuNjExMSAzOC4xNTE0IDE2Ljk2MDEgMzguMTUxNCAxNi4xNzkxTDM4LjE1MjUgMTUuNzQ0MVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNi40NDAzIDkuODczMDVDMjcuMzc5NyA5Ljg3MzA1IDI4LjQwNjUgMTAuMjIyIDI5LjAzMjggMTEuMDAxQzI5Ljc0MzEgMTEuODY1IDI5LjU5OCAxMy4xMjQgMjkuNTk4IDE0LjIyN0wyOS41OTU4IDIwLjcyNEMyOS41OTU4IDIwLjkzMSAyOS40MDE2IDIxLjA5NCAyOS4xNjU5IDIxLjA5NEgyNi45MjY5QzI2LjcwNjkgMjEuMDg5OCAyNi41Mjk1IDIwLjkyNzcgMjYuNTI0MyAyMC43MjZMMjYuNTIzMiAxNS4yNjZDMjYuNTIzMiAxNC44MzQgMjYuNTY1OCAxMy43NSAyNi40NjEgMTMuMzM5QzI2LjI5MyAxMi42NDUgMjUuNzkxMSAxMi40NTEgMjUuMTQ0IDEyLjQ1MUMyNC41NTQgMTIuNDYzMiAyNC4wMjc5IDEyLjc5NDYgMjMuODA0MSAxMy4yOTVDMjMuNjI1MiAxMy43MDEgMjMuNTk3OSAxNC4zMTUgMjMuNTk0NiAxNC44NDJWMjAuNzI0QzIzLjU5NDYgMjAuOTMxIDIzLjQwMjYgMjEuMDk0IDIzLjE2MzYgMjEuMDk0SDIwLjkyNjhDMjAuNzA2OCAyMS4wODkzIDIwLjUyOTQgMjAuOTI3NiAyMC41MjMxIDIwLjcyNkwyMC41MjA5IDE1LjI2NkMyMC41MjA5IDE1LjEwMyAyMC41MjUzIDE0LjkyOCAyMC41Mjc0IDE0Ljc0OEwyMC41Mjk2IDE0LjQ3NkMyMC41Mjg1IDEzLjQ3MiAyMC4zOTEgMTIuNDMgMTkuMTQyOCAxMi40M0MxNy43MDI1IDEyLjQzIDE3LjU5OTkgMTMuNzQzIDE3LjU5MzQgMTQuODcxVjIwLjcyNEMxNy41OTM0IDIwLjkzMSAxNy4zOTkyIDIxLjA5NCAxNy4xNjAyIDIxLjA5NEgxNC45MjAxQzE0LjcxMzcgMjEuMDg4MiAxNC41NDM1IDIwLjk0NDEgMTQuNTIwOCAyMC43NTZWMTAuNDZDMTQuNTIwOCAxMC4yNTUgMTQuNzE1IDEwLjA5IDE0Ljk1MzkgMTAuMDlIMTcuMDQwMkMxNy4yNTg0IDEwLjEwMiAxNy40MzMgMTAuMjQ4IDE3LjQ0NzIgMTAuNDM3VjExLjc4SDE3LjQ4OTdDMTguMDMyIDEwLjQ4IDE5LjA1NzcgOS44NzMwNSAyMC40MzggOS44NzMwNUMyMS44MzkgOS44NzMwNSAyMi43MTczIDEwLjQ4IDIzLjM0NTggMTEuNzhDMjMuODg5MiAxMC40OCAyNS4xMjExIDkuODczMDUgMjYuNDM5MiA5Ljg3MzA1SDI2LjQ0MDNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNzEuMzY2NSA5Ljg3MzA1QzcyLjM3MDQgOS44NzMwNSA3My4zNTM1IDEwLjE5OSA3My45Nzk4IDExLjA4OEM3NC41NjY4IDExLjkxMSA3NC41NjY4IDEzLjI5NSA3NC41NjY4IDE0LjI5MVYyMC43NjlDNzQuNTQxNyAyMC45NTQgNzQuMzU5NSAyMS4wOTQgNzQuMTM2OSAyMS4wOTRINzEuODkwM0M3MS42ODkyIDIxLjA4ODMgNzEuNTIxNSAyMC45NTE0IDcxLjQ5MiAyMC43NjlWMTUuMDU5QzcxLjUwMDcgMTMuOTM5IDcxLjU4NDggMTIuNDA5IDcwLjA5MSAxMi40MDlDNjkuNTQ2NSAxMi40MDkgNjkuMDQ0NiAxMi43MzQgNjguNzk1OCAxMy4yMzFDNjguNDc5NCAxMy44NTkgNjguNDM5IDE0LjQ4OSA2OC40MzkgMTUuMTgxVjIwLjcyNEM2OC40MzQ2IDIwLjkzMSA2OC4yNDA0IDIxLjA5NCA2OC4wMDI2IDIxLjA5NEg2NS43NzEyQzY1LjU1MTIgMjEuMDg5OCA2NS4zNzM4IDIwLjkyNzcgNjUuMzY4NiAyMC43MjZMNjUuMzY0MiAxMC40MjVDNjUuMzgyNyAxMC4yMzcgNjUuNTcwNCAxMC4wOTEgNjUuNzk0MSAxMC4wOTFINjcuODcyN0M2OC4wNjkxIDEwLjEwMSA2OC4yMjk1IDEwLjIxNyA2OC4yNzIxIDEwLjM4MVYxMS45NTRINjguMzEyNEM2OC45NDA5IDEwLjU0NCA2OS44MTkzIDkuODc0MDUgNzEuMzY2NSA5Ljg3NDA1VjkuODczMDVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTEuODAyNiAxMC4wNjMxQzUyLjAzOTMgMTAuMDYzMSA1Mi4yMjgxIDEwLjIxNzEgNTIuMjI4MSAxMC40MzUxVjExLjY5NzFDNTIuMjI0OCAxMS45MDkxIDUyLjAyNjIgMTIuMTgzMSA1MS42NzM4IDEyLjYyMzFMNDcuODU3IDE3LjQ5NjFDNDkuMjczMyAxNy40NjgxIDUwLjc3MDQgMTcuNjU3MSA1Mi4wNTc5IDE4LjMwNDFDNTIuMzQ3IDE4LjQ1MTEgNTIuNDI1NiAxOC42NjcxIDUyLjQ0ODUgMTguODgxMVYyMC40NDcxQzUyLjQ0ODUgMjAuNjY1MSA1Mi4xODQ1IDIwLjkxNTEgNTEuOTA2MiAyMC43ODQxQzQ5LjYzOTkgMTkuNzIxMSA0Ni42MzE3IDE5LjYwNDEgNDQuMTI0MyAyMC43OTcxQzQzLjg2ODkgMjAuOTIwMSA0My42MDA1IDIwLjY3NTEgNDMuNjAwNSAyMC40NTcxVjE4Ljk2NjFDNDMuNjAwNSAxOC43MjgxIDQzLjYwNiAxOC4zMTgxIDQzLjg3NDQgMTcuOTUzMUw0OC4yOTQ2IDEyLjI4MDFINDQuNDQ2MkM0NC4yMTE2IDEyLjI4MDEgNDQuMDIyOCAxMi4xMjgxIDQ0LjAyMDYgMTEuOTEwMVYxMC40MzYxQzQ0LjAxODcgMTAuMzM1IDQ0LjA2MjQgMTAuMjM3OCA0NC4xNDEyIDEwLjE2NzJDNDQuMjIwMSAxMC4wOTY2IDQ0LjMyNzMgMTAuMDU4OSA0NC40Mzc0IDEwLjA2MzFINTEuODAyNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05My4zODc4IDIxVjEzLjQ4OEM5My4zODc4IDEyLjUwMzggOTIuOTQ2NCAxMi4wMTE2IDkyLjA2MzUgMTIuMDExNkM5MS4yODE5IDEyLjAxMTYgOTAuNDkzIDEyLjE5OTggODkuNjk3IDEyLjU3NjFWMTIuNzkzMlYyMUg4Ni41MjcyVjEzLjQ4OEM4Ni41MjcyIDEyLjUwMzggODYuMDg1NyAxMi4wMTE2IDg1LjIwMjggMTIuMDExNkM4NC4zOTIyIDEyLjAxMTYgODMuNTk2MiAxMi4yMDcgODIuODE0NiAxMi41OTc4VjIxSDc5LjY0NDhWOS45MDU2OEg4Mi4yNTAxTDgyLjUzMjMgMTAuOTY5NUM4My4yOTk1IDEwLjQ2MjkgODMuOTg3IDEwLjEwODMgODQuNTk0OSA5LjkwNTY4Qzg1LjIxNzMgOS42ODg1NyA4NS44NTQxIDkuNTgwMDEgODYuNTA1NCA5LjU4MDAxQzg3LjgwODEgOS41ODAwMSA4OC43MjcyIDEwLjA0MzIgODkuMjYyNyAxMC45Njk1QzkwLjAwMDkgMTAuNDc3NCA5MC42OTU3IDEwLjEyMjggOTEuMzQ3IDkuOTA1NjhDOTEuOTk4MyA5LjY4ODU3IDkyLjY3MTQgOS41ODAwMSA5My4zNjYxIDkuNTgwMDFDOTQuMzc5MyA5LjU4MDAxIDk1LjE2MDkgOS44NjIyNiA5NS43MTA5IDEwLjQyNjdDOTYuMjc1NCAxMC45OTEyIDk2LjU1NzYgMTEuNzgwMSA5Ni41NTc2IDEyLjc5MzJWMjFIOTMuMzg3OFpNOTkuNjQwNCAyMVY5LjkwNTY4SDEwMi44MVYyMUg5OS42NDA0Wk0xMDEuMjI1IDguMTkwNTFDMTAwLjY3NSA4LjE5MDUxIDEwMC4yMzQgOC4wMzg1MyA5OS45MDEgNy43MzQ1OEM5OS41NjgxIDcuNDMwNjIgOTkuNDAxNiA3LjAxODExIDk5LjQwMTYgNi40OTcwNUM5OS40MDE2IDUuOTc1OTkgOTkuNTY4MSA1LjU2MzQ4IDk5LjkwMSA1LjI1OTUyQzEwMC4yMzQgNC45NTU1NyAxMDAuNjc1IDQuODAzNTkgMTAxLjIyNSA0LjgwMzU5QzEwMS43NzUgNC44MDM1OSAxMDIuMjE3IDQuOTU1NTcgMTAyLjU1IDUuMjU5NTJDMTAyLjg4MyA1LjU2MzQ4IDEwMy4wNDkgNS45NzU5OSAxMDMuMDQ5IDYuNDk3MDVDMTAzLjA0OSA3LjAxODExIDEwMi44ODMgNy40MzA2MiAxMDIuNTUgNy43MzQ1OEMxMDIuMjE3IDguMDM4NTMgMTAxLjc3NSA4LjE5MDUxIDEwMS4yMjUgOC4xOTA1MVpNMTEzLjA1NyAyMVYxMy43MjY4QzExMy4wNTcgMTMuMTMzNCAxMTIuOTI2IDEyLjY5OTIgMTEyLjY2NiAxMi40MjQyQzExMi40MDUgMTIuMTQ5MSAxMTIuMDA3IDEyLjAxMTYgMTExLjQ3MiAxMi4wMTE2QzExMC42NzYgMTIuMDExNiAxMDkuODg3IDEyLjI1NzcgMTA5LjEwNSAxMi43NDk4VjIxSDEwNS45MzVWOS45MDU2OEgxMDguNTQxTDEwOC44NDUgMTEuMDk5OEMxMTAuMTQ3IDEwLjA4NjYgMTExLjUzNyA5LjU4MDAxIDExMy4wMTMgOS41ODAwMUMxMTQuMDQxIDkuNTgwMDEgMTE0LjgzIDkuODYyMjYgMTE1LjM4IDEwLjQyNjdDMTE1Ljk0NCAxMC45NzY4IDExNi4yMjYgMTEuNzY1NiAxMTYuMjI2IDEyLjc5MzJWMjFIMTEzLjA1N1pNMTE5LjMxNiAyMVY5LjkwNTY4SDEyMi40ODZWMjFIMTE5LjMxNlpNMTIwLjkwMSA4LjE5MDUxQzEyMC4zNTEgOC4xOTA1MSAxMTkuOTA5IDguMDM4NTMgMTE5LjU3NyA3LjczNDU4QzExOS4yNDQgNy40MzA2MiAxMTkuMDc3IDcuMDE4MTEgMTE5LjA3NyA2LjQ5NzA1QzExOS4wNzcgNS45NzU5OSAxMTkuMjQ0IDUuNTYzNDggMTE5LjU3NyA1LjI1OTUyQzExOS45MDkgNC45NTU1NyAxMjAuMzUxIDQuODAzNTkgMTIwLjkwMSA0LjgwMzU5QzEyMS40NTEgNC44MDM1OSAxMjEuODkyIDQuOTU1NTcgMTIyLjIyNSA1LjI1OTUyQzEyMi41NTggNS41NjM0OCAxMjIuNzI1IDUuOTc1OTkgMTIyLjcyNSA2LjQ5NzA1QzEyMi43MjUgNy4wMTgxMSAxMjIuNTU4IDcuNDMwNjIgMTIyLjIyNSA3LjczNDU4QzEyMS44OTIgOC4wMzg1MyAxMjEuNDUxIDguMTkwNTEgMTIwLjkwMSA4LjE5MDUxWk0xMjguOTMzIDIxVjguNTU5NkgxMjQuMzUyVjUuOTU0MjhIMTM2Ljc3VjguNTU5NkgxMzIuMTg5VjIxSDEyOC45MzNaTTE0My4xNTMgMjFMMTM3LjgxMiA1Ljk1NDI4SDE0MS40MTZMMTQ0LjkzMyAxNy44MDg1TDE0OC40MjkgNS45NTQyOEgxNTEuOTQ2TDE0Ni42MDUgMjFIMTQzLjE1M1oiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8yNjRfMzU1KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzI2NF8zNTUiIHgxPSIxNTYuMjUiIHkxPSIwIiB4Mj0iNzguMTI1IiB5Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRTkwQjhDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0QyMUY0OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==" alt=""></a>
+    </div>
+    <div class="nav-footer">
+        <a href="#"><img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Web/images/play-store-icon.svg" alt=""></a>
+    </div>
+    <div class="nav-footer">
+        <a href="https://apps.apple.com/in/app/amazon-india-shop-pay-minitv/id1478350915"><img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Web/images/app-store-icon.svg" alt=""></a>
+    </div>
+</div>
+
+
+
+    <script src="Amazon_mini_TV.js"></script>
+</body>
+</html>
